@@ -290,3 +290,25 @@ so please use the support mechanisms described above, and we will do our best to
 ### Note
 
 >Note: The PDF documents used in this demo contain information generated using a language model (Azure OpenAI Service). The information contained in these documents is only for demonstration purposes and does not reflect the opinions or beliefs of Microsoft. Microsoft makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the information contained in this document. All rights reserved to Microsoft.
+
+## Requirements
+
+The following packages are required to run this project:
+
+- `aiofiles==23.2.1`: Required by quart
+- `aiohttp==3.9.3`: Required by requirements.in and microsoft-kiota-authentication-azure
+- `aiosignal==1.3.1`: Required by aiohttp
+- `annotated-types==0.6.0`: Required by pydantic
+- `anyio==4.3.0`: Required by httpx and openai
+- `asgiref==3.7.2`: Required by opentelemetry-instrumentation-asgi
+- `attrs==23.2.0`: Required by aiohttp
+- `azure-ai-documentintelligence==1.0.0b2`: Required by requirements.in
+- `azure-common==1.1.28`: Required by azure-search-documents
+- `azure-core==1.30.1`: Required by multiple packages
+- `azure-core-tracing-opentelemetry==1.0.0b11`: Required by azure-monitor-opentelemetry
+- `azure-identity==1.15.0`: Required by requirements.in and msgraph-sdk
+
+You can install these packages using pip:
+
+```bash
+pip install -r requirements.txt
